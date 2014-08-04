@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="runtheapp"  >
+<target name="runtheapp">
+  <ant antfile="build.xml"/>
+  <exec failonerror="true" dir="{$basedir}" executable="{$basedir}/testrunner.bat">
+    <arg line=""/>
+  </exec>
+</target>
+</project>
